@@ -9,6 +9,12 @@
         color: rgba(239, 226, 226, 0.948);
         background-color: rgba(0, 0, 0, 0.668);
       }
+      table {
+
+        border: 3px rgba(239, 226, 226, 0.948);
+        color: rgba(239, 226, 226, 0.948);
+        background-color: rgba(0, 0, 0, 0.668);
+      }
     </style>
   </head>
   <body background="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.internationalinside.com%2Fwp-content%2Fuploads%2F2016%2F05%2FRome-Empire.jpg&f=1&nofb=1&ipt=a2b65502ca950d6a6c843518de1e38c0d87c303b9d2dc561d704669450e05b8d&ipo=images">
@@ -17,14 +23,20 @@
         "Lorem ipsum dolor sit amet consectetur adipisicing elit"
       </p>
       <p>
-        <table>
+        <table  border="10" align="center" cellpadding="10">
             <tr>
                 <td>
-                    <a href="pages/page1.html">Page1</a>
+                    <a href="pages/page1.html" target="mainFrame">Page1</a>
                 </td>
                 <td>
-                    <a href="pages/page2.html">Page2</a>
+                    <a href="pages/page2.html" target="mainFrame">Page2</a>
                 </td>
+                <td>
+                    <a href="https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif" target="mainFrame">Surprise</a>
+                </td>
+            </tr>
+            <tr>
+                <iframe name="mainFrame" src="pages/page1.html" width="80%" height="800px"></iframe>
             </tr>
             
         </table>
