@@ -5,41 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem ipsum</title>
     <style>
-      .header {
-        color: rgba(239, 226, 226, 0.948);
-        background-color: rgba(0, 0, 0, 0.668);
+      /* navigation bar settings */
+      .navbar {
+        overflow: hidden;
+        background-color: #333333;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
       }
-      table {
+      .customTable2 {
+        width: 100%;
+        text-align: left;
+        background-color: rgba(187, 15, 15, 0.811);
+        border-color: aliceblue;
+        border-bottom: 3px;
+      }
 
-        border: 3px rgba(239, 226, 226, 0.948);
-        color: rgba(239, 226, 226, 0.948);
-        background-color: rgba(0, 0, 0, 0.668);
+      .tableCell {
+        background-color: rgba(0, 0, 0, 0.116);
+      }
+
+      /* link settings */
+      a:link {
+        color: rgb(255, 255, 255);
+      }
+      a:visited {
+        color: rgb(209, 209, 209);
+      }
+      a:hover {
+        color: rgb(154, 235, 255);
+      }
+      a:active {
+        color: rgb(123, 255, 251);
+      }
+      .cTitle {
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      body {
+        margin: 0px;
+        background-image: url("BackGround.JPG");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .centerFrame {
+        margin-top: 180px;
       }
     </style>
   </head>
-  <body background="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.internationalinside.com%2Fwp-content%2Fuploads%2F2016%2F05%2FRome-Empire.jpg&f=1&nofb=1&ipt=a2b65502ca950d6a6c843518de1e38c0d87c303b9d2dc561d704669450e05b8d&ipo=images">
-      <h1 align="center" class="header">Lorem ipsum dolor sit amet.</h1>
-      <p align="center" class="header">
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-      </p>
-      <p>
-        <table  border="10" align="center" cellpadding="10">
-            <tr>
-                <td>
-                    <a href="pages/page1.html" target="mainFrame">Page1</a>
-                </td>
-                <td>
-                    <a href="pages/page2.html" target="mainFrame">Page2</a>
-                </td>
-                <td>
-                    <a href="https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif" target="mainFrame">Surprise</a>
-                </td>
-            </tr>
-            <tr>
-                <iframe name="mainFrame" src="pages/page1.html" width="80%" height="800px"></iframe>
-            </tr>
-            
-        </table>
-      </p>
+  <body>
+    <div class="navbar">
+      <table clas="customTable2" width="100%">
+        <tr>
+          <td rowspan="3" width="15%">
+            <img src="SPQR_logo_2.png" height="150" />
+          </td>
+        </tr>
+        <td colspan="5" align="left">
+          <h1 class="cTitle">Lorem ipsum dolor sit amet.</h1>
+          <h3 class="cTitle">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+          </h3>
+        </td>
+        <td width="40%"></td>
+        <tr align="center">
+          <td></td>
+          <td width="100">
+            <a href="pages/page1.html" target="mainFrame">Page1</a>
+          </td>
+          <td width="100">
+            <a href="pages/page2.html" target="mainFrame">Page2</a>
+          </td>
+          <td width="100">
+            <a href="pages/page3.html" target="mainFrame">Surprise</a>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <p align="center" class="centerFrame">
+      <iframe
+        name="mainFrame"
+        src="pages/page1.html"
+        width="98%"
+        height="1720"
+      ></iframe>
+    </p>
   </body>
 </html>
